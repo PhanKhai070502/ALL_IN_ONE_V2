@@ -2203,7 +2203,7 @@ void airMouse(Adafruit_SSD1306 &display) {
   while (i2cRead(0x3B, i2cData, 6));
   timer = micros();
 
-  BleMouse bleMouse("Mouse");
+  BleMouse bleMouse("Air_Mouse");
   bleMouse.begin();
   delay(100);
 
